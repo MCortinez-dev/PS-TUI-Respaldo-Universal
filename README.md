@@ -19,11 +19,10 @@ Un script interactivo en PowerShell diseñado para simplificar y automatizar la 
    ```bash
    git clone [https://github.com/MCortinez-dev/PS-TUI-Respaldo-Universal.git](https://github.com/MCortinez-dev/PS-TUI-Respaldo-Universal.git)
    ```
-   Abre una terminal de PowerShell como Administrador, navega a la carpeta y ejecuta:
+2. Abre una terminal de PowerShell como Administrador, navega a la carpeta y ejecuta:
 
-## 🕹️ PowerShell
-```
+   ```PowerShell
    Set-ExecutionPolicy Bypass -Scope Process .\respaldo-universal.ps1
-```
+   ```
 
 Desarrollado con 💪 por MCortinez-dev
