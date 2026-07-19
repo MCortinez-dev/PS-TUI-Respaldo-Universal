@@ -21,7 +21,7 @@ Un script interactivo en PowerShell diseñado para simplificar y automatizar la 
    ```
    Abre una terminal de PowerShell como Administrador, navega a la carpeta y ejecuta:
 
-PowerShell
+## 🕹️ PowerShell
 ```
    Set-ExecutionPolicy Bypass -Scope Process .\respaldo-universal.ps1
 ```
