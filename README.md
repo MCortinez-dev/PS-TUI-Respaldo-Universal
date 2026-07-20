@@ -4,7 +4,7 @@ Un script interactivo en PowerShell diseñado para simplificar y automatizar la 
 
 ---
 
-### En criollo 🥟 ¿Para qué sirve esto?
+### 🥟 En criollo ¿Para qué sirve esto?
 
 ¿Querés hacer copias de seguridad de tus archivos importantes pero estás cansado de programas pagos, pesados o llenos de publicidad que andan Dios sabe qué haciendo con tus datos en segundo plano? Con este script resolvés exactamente lo mismo usando herramientas nativas y transparentes. 
 
@@ -41,10 +41,12 @@ Aquí podés ver el flujo interactivo del asistente en acción:
 
 #### Paso 1: Selección de Origen
 ![Selección de Origen](./capturas/paso-1.png)
+
 *El asistente lista los discos físicos locales detectados y su espacio libre.*
 
 #### Paso 3.1: Detección de Huérfanos en Destino (Rsync / SSH)
 ![Detección de Carpetas Huérfanas](./capturas/paso-2.png)
+
 *El script lee el servidor remoto a través de Tailscale y advierte qué carpetas se borrarían si no las protegés.*
 
 ---
