@@ -12,9 +12,9 @@ $destinoFinal = ""
 $esRsync = $false
 
 function Mostrar-Footer {
-    Write-Host "----------------------------------------------------------"
+    Write-Host "---------------------------------------------------------------------------"
     Write-Host " Desarrollado por: MCortinez-dev | GitHub: https://github.com/MCortinez-dev" -ForegroundColor DarkGray
-    Write-Host "==========================================================" -ForegroundColor Green
+    Write-Host "===========================================================================" -ForegroundColor Green
 }
 
 while (-not $salir) {
@@ -41,9 +41,9 @@ while (-not $salir) {
                 $i++
             }
             Write-Host ""
-            
             Mostrar-Footer
-            $seleccion = Read-Host "Selecciona el numero de origen o 'X' para salir"
+            
+            $seleccion = Read-Host "Selecciona el numero de origen o 'X' para salir"        
             
             if ($seleccion -eq "x") { $salir = $true }
             elseif ($seleccion -match "^\d+$" -and [int]$seleccion -ge 1 -and [int]$seleccion -lt $i) {
@@ -124,11 +124,11 @@ while (-not $salir) {
                     $accesible = Test-Path -Path $destinoFinal -ErrorAction SilentlyContinue
                 }
                 "2" { 
-                    $destinoFinal = Read-Host "`nIngresa la ruta UNC de red (Ej: \\192.168.0.109\Particion)"
+                    $destinoFinal = Read-Host "`nIngresa la ruta UNC de red (Ej: \\192.168.0.1\Particion)"
                     $accesible = Test-Path -Path $destinoFinal -ErrorAction SilentlyContinue
                 }
                 "3" { 
-                    $destinoFinal = Read-Host "`nIngresa el destino SSH/Rsync (Ej: user@servidor:/media/Matias)"
+                    $destinoFinal = Read-Host "`nIngresa el destino SSH/Rsync (Ej: user@servidor:/media/Disco)"
                     $esRsync = $true
                     if ($destinoFinal -match "^([^@]+)@([^:]+):(.+)$") {
                         $sshUser = $Matches[1]
