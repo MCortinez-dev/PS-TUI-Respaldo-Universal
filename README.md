@@ -40,11 +40,11 @@ Este asistente está diseñado bajo la filosofía de **Sincronización en Espejo
 Aquí podés ver el flujo interactivo del asistente en acción:
 
 #### Paso 1: Selección de Origen
-![Selección de Origen](`./capturas/paso-1.png`)
+![Selección de Origen](./capturas/paso-1.png)
 *El asistente lista los discos físicos locales detectados y su espacio libre.*
 
 #### Paso 3.1: Detección de Huérfanos en Destino (Rsync / SSH)
-![Detección de Carpetas Huérfanas](`./capturas/paso-2.png`)
+![Detección de Carpetas Huérfanas](./capturas/paso-2.png)
 *El script lee el servidor remoto a través de Tailscale y advierte qué carpetas se borrarían si no las protegés.*
 
 ---
